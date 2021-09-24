@@ -3,7 +3,7 @@ import 'styles/Login/LoginVideo.css'
 import FormularioRecuperar from './FormularioRecuperar'
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom"
-import CircularProgress from "components/CircularProgress/index";
+import CircularProgress from "../../components/CircularProgress/index";
 import {message} from 'antd'
 
 const Recuperar = () => {

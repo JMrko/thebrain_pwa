@@ -4,14 +4,14 @@ import {
     OBTENER_SELECCION_MODULO,
     SELECCIONAR_AGREGAR_FAVORITO,
     SELECCIONAR_FAVORITOS
-} from "constants/Dashboard/DashboardTypes";
-import config from 'config'
+} from "../../../constants/Dashboard/DashboardTypes";
+import config from '../../../config'
 import { message } from 'antd'
 import { estadoRequestReducer } from "../../../appRedux/actions/EstadoRequest"
 import { mostrarPaisesReducer } from "../../../appRedux/actions/Auth";
-import {
-    CambiarPaisReducer
-} from "../Auth"
+// import {
+//     CambiarPaisReducer
+// } from "../Auth"
 // import {EncontrarModuloReducer} from 'appRedux/actions/Usuarios/Usuarios'
 
 

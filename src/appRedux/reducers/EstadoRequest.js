@@ -4,7 +4,7 @@ import {
     ESTADO_REQUEST_ERROR_SERVIDOR,
     ESTADO_REQUEST_NO_EXISTE,
     ESTADO_REQUEST_DESCONOCIDO
-} from "constants/EstadosTypes";
+} from "../../../constants/EstadosTypes";
 
 const INIT_STATE = {
     init_estadoRequest  : 0,

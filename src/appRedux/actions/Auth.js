@@ -20,14 +20,14 @@ import {
   SIGNUP_USER_SUCCESS,
   MOSTRAR_FORMULARIO_LOGIN,
   OBTENER_DATOS_USUARIO_LOGIN
-} from "constants/ActionTypes";
+} from "../../constants/ActionTypes";
 
 import {
   OBTENER_PAISES_SISTEMA,
   SELECCIONAR_PAIS_ESPECIFICO
-} from "constants/PermisosTypes"
+} from "../../../constants/PermisosTypes"
 
-import config from 'config'
+import config from '../../config'
 import { estadoRequestReducer } from "../actions/EstadoRequest"
 import { message } from 'antd';
 

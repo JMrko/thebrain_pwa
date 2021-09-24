@@ -1,11 +1,11 @@
 import {all, call, fork, put, takeEvery} from "redux-saga/effects";
-import {
-  auth,
-  facebookAuthProvider,
-  githubAuthProvider,
-  googleAuthProvider,
-  twitterAuthProvider
-} from "../../firebase/firebase";
+// import {
+//   auth,
+//   facebookAuthProvider,
+//   githubAuthProvider,
+//   googleAuthProvider,
+//   twitterAuthProvider
+// } from "../../firebase/firebase";
 import {
   SIGNIN_FACEBOOK_USER,
   SIGNIN_GITHUB_USER,
@@ -14,7 +14,7 @@ import {
   SIGNIN_USER,
   SIGNOUT_USER,
   SIGNUP_USER
-} from "constants/ActionTypes";
+} from "../../constants/ActionTypes";
 import {
   showAuthMessage, 
   userSignInSuccess, 
@@ -28,41 +28,41 @@ import {
   userTwitterSignInSuccess
 } from "../actions/Auth";
 
-const createUserWithEmailPasswordRequest = async (email, password) =>
-  await  auth.createUserWithEmailAndPassword(email, password)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const createUserWithEmailPasswordRequest = async (email, password) =>
+//   await  auth.createUserWithEmailAndPassword(email, password)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
-const signInUserWithEmailPasswordRequest = async (email, password) =>
-  await  auth.signInWithEmailAndPassword(email, password)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signInUserWithEmailPasswordRequest = async (email, password) =>
+//   await  auth.signInWithEmailAndPassword(email, password)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
-const signOutRequest = async () =>
-  await  auth.signOut()
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signOutRequest = async () =>
+//   await  auth.signOut()
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
 
-const signInUserWithGoogleRequest = async () =>
-  await  auth.signInWithPopup(googleAuthProvider)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signInUserWithGoogleRequest = async () =>
+//   await  auth.signInWithPopup(googleAuthProvider)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
-const signInUserWithFacebookRequest = async () =>
-  await  auth.signInWithPopup(facebookAuthProvider)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signInUserWithFacebookRequest = async () =>
+//   await  auth.signInWithPopup(facebookAuthProvider)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
-const signInUserWithGithubRequest = async () =>
-  await  auth.signInWithPopup(githubAuthProvider)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signInUserWithGithubRequest = async () =>
+//   await  auth.signInWithPopup(githubAuthProvider)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
-const signInUserWithTwitterRequest = async () =>
-  await  auth.signInWithPopup(twitterAuthProvider)
-    .then(authUser => authUser)
-    .catch(error => error);
+// const signInUserWithTwitterRequest = async () =>
+//   await  auth.signInWithPopup(twitterAuthProvider)
+//     .then(authUser => authUser)
+//     .catch(error => error);
 
 function* createUserWithEmailPassword({payload}) {
   const {email, password} = payload;
@@ -79,19 +79,19 @@ function* createUserWithEmailPassword({payload}) {
   }
 }
 
-function* signInUserWithGoogle() {
-  try {
-    const signUpUser = yield call(signInUserWithGoogleRequest);
-    if (signUpUser.message) {
-      yield put(showAuthMessage(signUpUser.message));
-    } else {
-      localStorage.setItem('user_id', signUpUser.user.uid);
-      yield put(userGoogleSignInSuccess(signUpUser.user.uid));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* signInUserWithGoogle() {
+//   try {
+//     const signUpUser = yield call(signInUserWithGoogleRequest);
+//     if (signUpUser.message) {
+//       yield put(showAuthMessage(signUpUser.message));
+//     } else {
+//       localStorage.setItem('user_id', signUpUser.user.uid);
+//       yield put(userGoogleSignInSuccess(signUpUser.user.uid));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
 
 function* signInUserWithFacebook() {

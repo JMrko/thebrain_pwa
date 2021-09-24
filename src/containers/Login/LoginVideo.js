@@ -4,7 +4,7 @@ import BannerLogin from './BannerLogin'
 import FormularioLogin from './FormularioLogin'
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom"
-import CircularProgress from "components/CircularProgress/index";
+import CircularProgress from "../../components/CircularProgress/index";
 import {message} from 'antd'
 import {setMostrarVideoPreload, setMostrarVideoLogin} from '../../../appRedux/actions/Login'
 

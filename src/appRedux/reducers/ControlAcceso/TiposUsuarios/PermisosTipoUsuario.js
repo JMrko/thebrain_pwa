@@ -2,7 +2,7 @@ import {
     CARGANDO_PERMISOS_TIPO_USUARIO_CONTROL_ACCESO,
     OBTENER_PERMISOS_TIPO_USUARIO_CONTROL_ACCESO,
     PODER_GUARDAR_PERMISOS_TIPO_USUARIO_CONTROL_ACCESO,
-} from "constants/SistemaTypes";
+} from "../../../../constants/SistemaTypes";
 
 const INIT_STATE = {
     cargandoPermisosTipoUsuario : false,

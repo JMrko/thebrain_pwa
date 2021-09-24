@@ -14,7 +14,7 @@ import {
 } from '../appRedux/actions/Auth';
 
 import IntlMessages from "util/IntlMessages";
-import CircularProgress from "components/CircularProgress/index";
+import CircularProgress from "../components/CircularProgress/index";
 import TwitterOutlined from "@ant-design/icons/lib/icons/TwitterOutlined";
 import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";
 import FacebookOutlined from "@ant-design/icons/lib/icons/FacebookOutlined";

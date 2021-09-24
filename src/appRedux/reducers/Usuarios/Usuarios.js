@@ -1,7 +1,7 @@
 import {
     OBTENER_PERMISOS_USUARIO,
     OBTENER_MODULOS_USUARIO
-} from "constants/Usuarios/UsuariosTypes";
+} from "../../../constants/Usuarios/UsuariosTypes";
 
 const INIT_STATE = {
     permisos_usuario  : [],

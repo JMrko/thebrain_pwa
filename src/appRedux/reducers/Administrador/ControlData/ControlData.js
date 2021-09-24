@@ -4,7 +4,7 @@ import {
     CARGANDO_DATA_ARCHIVO_DATA_CONTROL_DATA,
     OBTENER_DATA_ARCHIVO_DATA_CONTROL_DATA,
     SELECCIONAR_DATA_ARCHIVO_DATA_CONTROL_DATA,
-} from "constants/SistemaTypes";
+} from "../../../../constants/SistemaTypes";
 
 const INIT_STATE = {
     cargandoNuevaData : false,

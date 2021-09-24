@@ -5,7 +5,7 @@ import {
     CONTROLES_ACCESOS_TIPOS_USUARIOS_VISIBILIDAD_MODAL_NUEVO_TIPO_USUARIO,
     CONTROLES_ACCESOS_TIPOS_USUARIOS_CARGANDO_NUEVO_TIPO_USUARIO,
     ACTUALIZAR_DATA_PERMISOS_TIPO_USUARIO
-} from "constants/SistemaTypes";
+} from "../../../../constants/SistemaTypes";
 
 const INIT_STATE = {
     cargandoTablaTiposUsuarios : false,

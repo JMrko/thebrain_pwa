@@ -4,7 +4,7 @@ import {
     CONTROLES_ACCESOS_PERMISOS_OBTENER_COLUMNAS_TABLA_PERMISOS,
     CONTROLES_ACCESOS_PERMISOS_VISIBILIDAD_MODAL_NUEVO_PERMISO,
     CONTROLES_ACCESOS_PERMISOS_CARGANDO_NUEVO_PERMISO
-} from "constants/SistemaTypes";
+} from "../../../../constants/SistemaTypes";
 
 const INIT_STATE = {
     cargandoTablaPermisos    : false,

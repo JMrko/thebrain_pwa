@@ -10,7 +10,7 @@ import {
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom";
 import iconoCerrarModal from '../../assets/images/iconos/Perfil/cerrarModal.png';
-import config from 'config'
+import config from '../../config'
 
 const FormularioCambiarContrasenia = (props) => {
     

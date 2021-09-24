@@ -14,11 +14,11 @@ import {
   MOSTRAR_FORMULARIO_LOGIN,
   OBTENER_PERMISOS_USUARIO,
   OBTENER_DATOS_USUARIO_LOGIN
-} from "constants/ActionTypes";
+} from "../../constants/ActionTypes";
 import {
   OBTENER_PAISES_SISTEMA,
   SELECCIONAR_PAIS_ESPECIFICO
-} from "constants/PermisosTypes"
+} from "../../constants/PermisosTypes"
 
 const INIT_STATE = {
   loader       : false,

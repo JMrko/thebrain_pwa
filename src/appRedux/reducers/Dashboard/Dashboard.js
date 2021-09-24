@@ -4,7 +4,7 @@ import {
     SELECCIONAR_AGREGAR_FAVORITO,
     SELECCIONAR_FAVORITOS,
     SELECCIONAR_MODULO_ESPECIFICO
-} from "constants/Dashboard/DashboardTypes";
+} from "../../../constants/Dashboard/DashboardTypes";
 
 const INIT_STATE = {
     moduloSeleccionado  : {},

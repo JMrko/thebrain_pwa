@@ -1,9 +1,9 @@
-import config from 'config'
+import config from '../../../config'
 import { estadoRequestReducer } from "../../../appRedux/actions/EstadoRequest"
 import {
     OBTENER_PERMISOS_USUARIO,
     OBTENER_MODULOS_USUARIO
-} from "constants/Usuarios/UsuariosTypes";
+} from "../../../../constants/Usuarios/UsuariosTypes";
 
 import {
     CambiarPaisReducer

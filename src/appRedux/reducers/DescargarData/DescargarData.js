@@ -1,7 +1,7 @@
 import {
     OBTENER_DATA_SELECCIONADO_DESCARGAR_DATA,
     OBTENER_ARCHIVOS_DESCARGAR_DESCARGAR_DATA
-} from "constants/DescargarData/DescargarDataTypes"
+} from "../../../constants/DescargarData/DescargarDataTypes"
 
 const INIT_STATE = {
     dataSeleccionada  : {},

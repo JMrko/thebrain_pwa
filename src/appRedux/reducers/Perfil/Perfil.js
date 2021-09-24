@@ -1,6 +1,6 @@
-import {
+// import {
     
-} from "constants/Perfil/PerfilTypes";
+// } from "constants/Perfil/PerfilTypes";
 
 const INIT_STATE = {
     

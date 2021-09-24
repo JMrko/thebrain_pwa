@@ -15,7 +15,7 @@ import {
 
 import IntlMessages from "util/IntlMessages";
 import {message} from "antd/lib/index";
-import CircularProgress from "components/CircularProgress/index";
+import CircularProgress from "../components/CircularProgress/index";
 import GoogleOutlined from "@ant-design/icons/lib/icons/GoogleOutlined";
 import FacebookOutlined from "@ant-design/icons/lib/icons/FacebookOutlined";
 import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";

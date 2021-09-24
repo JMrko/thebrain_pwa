@@ -1,7 +1,7 @@
 import {
     CARGANDO_TABLA_CONTROL_ARCHIVOS,
     OBTENER_ARCHIVOS_CONTROL_ARCHIVOS,
-} from "constants/ControlArchivos/ControlArchivos";
+} from "../../../constants/ControlArchivos/ControlArchivos";
 
 const INIT_STATE = {
     cargando_tabla_control_archivos : false,

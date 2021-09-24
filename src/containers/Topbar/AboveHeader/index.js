@@ -6,7 +6,7 @@ import CustomScrollbars from "util/CustomScrollbars";
 import languageData from "../languageData";
 import SearchBox from "components/SearchBox";
 import UserInfo from "components/UserInfo";
-import AppNotification from "components/AppNotification";
+import AppNotification from "../../../components/AppNotification";
 import MailNotification from "components/MailNotification";
 import {switchLanguage, toggleCollapsedSideNav} from "../../../appRedux/actions/Setting";
 

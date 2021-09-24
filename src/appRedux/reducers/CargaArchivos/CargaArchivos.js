@@ -1,7 +1,7 @@
 import {
     MOSTRAR_NOTIFICACIONES_PANTALLA_COMPLETA_CARGA_ARCHIVOS,
     OBTENER_NOTIFICACIONES_CARGA_ARCHIVOS
-} from "constants/CargaArchivos/CargaArchivos";
+} from "../../../constants/CargaArchivos/CargaArchivos";
 
 const INIT_STATE = {
     mostrarNotificacionesPantallaCompleta : false,

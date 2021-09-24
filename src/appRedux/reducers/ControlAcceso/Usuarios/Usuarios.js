@@ -4,7 +4,7 @@ import {
     CONTROLES_ACCESOS_USUARIOS_OBTENER_COLUMNAS_TABLA_USUARIOS,
     CONTROLES_ACCESOS_USUARIOS_VISIBILIDAD_MODAL_NUEVO_USUARIO,
     CONTROLES_ACCESOS_USUARIOS_CARGANDO_NUEVO_USUARIO,
-} from "constants/SistemaTypes";
+} from "../../../../constants/SistemaTypes";
 
 const INIT_STATE = {
     cargandoTablaUsuarios : false,

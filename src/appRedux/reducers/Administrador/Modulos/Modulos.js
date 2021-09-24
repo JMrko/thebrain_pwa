@@ -3,7 +3,7 @@ import {
     CARGANDO_DATA_MODULOS_ADMINISTRACION,
     CARGANDO_NUEVO_MODULO_ADMINISTRACION,
     CARGANDO_NUEVO_SUBMODULO_ADMINITRACION
-} from "constants/SistemaTypes"
+} from "../../../../constants/SistemaTypes"
 
 const INIT_STATE = {
     dataModulos : [],
