@@ -4,13 +4,25 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {AppContainer} from 'react-hot-loader';
+import NextApp from './NextApp';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const render = Component => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component/>
+    </AppContainer>,
+    document.getElementById('root')
+  );
+};
+
+render(NextApp);
+
+if (module.hot) {
+  module.hot.accept('./NextApp', () => {
+    render(NextApp);
+  });
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
