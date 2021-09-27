@@ -9,7 +9,7 @@ import ImagenArgentina from '../../assets/images/Login/banderaArgentina.png'
 import VideoIniciarSesion from '../../assets/Videos/Login/videologin.mp4';
 import {Form, Input, Select, Button } from "antd";
 import {Link} from "react-router-dom";
-import 'styles/Login/FormularioLogin.css'
+import '../../styles/Login/FormularioLogin.css'
 import {
     showAuthLoader,
     userSignIn,

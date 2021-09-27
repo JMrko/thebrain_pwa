@@ -13,7 +13,7 @@ import {
   userTwitterSignIn
 } from '../appRedux/actions/Auth';
 
-import IntlMessages from "util/IntlMessages";
+import IntlMessages from "../util/IntlMessages";
 import CircularProgress from "../components/CircularProgress/index";
 import TwitterOutlined from "@ant-design/icons/lib/icons/TwitterOutlined";
 import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";

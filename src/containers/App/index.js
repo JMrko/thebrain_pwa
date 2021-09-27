@@ -5,7 +5,7 @@ import {Redirect, Route, Switch, useHistory, useLocation, useRouteMatch} from "r
 import { ConfigProvider } from 'antd';
 import {IntlProvider} from "react-intl";
 
-import AppLocale from "lngProvider";
+import AppLocale from "../../lngProvider/index";
 import MainApp from "./MainApp";
 // import Login from "../Login/Login";
 import LoginVideo from "../Login/LoginVideo";

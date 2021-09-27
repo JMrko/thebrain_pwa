@@ -8,7 +8,7 @@ import {
     ESTADO_REQUEST_ERROR_SERVIDOR,
     ESTADO_REQUEST_NO_EXISTE,
     ESTADO_REQUEST_DESCONOCIDO
-} from "../../../constants/EstadosTypes";
+} from "../../constants/EstadosTypes";
 
 // REDUCER -> ENVIAR LA DATA DE FETCH A UNA CONSTANTE O ESTADO
 export const estadoRequestReducer = (estado) => (dispatch) => {

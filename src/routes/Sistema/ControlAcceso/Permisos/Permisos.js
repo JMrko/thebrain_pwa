@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import {Card, Table, Row, Col, Button} from "antd";
 import {useDispatch, useSelector} from "react-redux";
-import {ObtenerListaPermisos, VisibilidadModalNuevoPermisoReducer} from "appRedux/actions/ControlAcceso/Permisos/Permisos";
-import ModalNuevoPermiso from "components/Sistema/ControlAcceso/Permisos/ModalNuevoPermiso"
+import {ObtenerListaPermisos, VisibilidadModalNuevoPermisoReducer} from "../../../../appRedux/actions/ControlAcceso/Permisos/Permisos";
+import ModalNuevoPermiso from "../../../../components/Sistema/ControlAcceso/Permisos/ModalNuevoPermiso"
 
 const Permisos = () => {
 

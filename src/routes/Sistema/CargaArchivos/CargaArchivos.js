@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
 import {Row, Col} from 'antd'
-import TarjetaCargaArchivo from 'components/Sistema/CargaArchivos/TarjetaCargaArchivo'
-import 'styles/Sistema/CargaArchivos/CargaArchivos.css'
+import TarjetaCargaArchivo from '../../../components/Sistema/CargaArchivos/TarjetaCargaArchivo'
+import '../../../styles/Sistema/CargaArchivos/CargaArchivos.css'
 import Notificaciones from '../../../components/Sistema/CargaArchivos/Notificaciones'
 import {useSelector, useDispatch} from "react-redux";
 import {
     SeleccionarModuloEspecificoReducer
-} from 'appRedux/actions/Dashboard/Dashboard'
-import IconoSelecCargaArchivo from 'assets/images/iconos/Sidebar/Seleccionado/selecCargaArchivo.png'
+} from '../../../appRedux/actions/Dashboard/Dashboard'
+import IconoSelecCargaArchivo from '../../../assets/images/iconos/Sidebar/Seleccionado/selecCargaArchivo.png'
 import SliderSubMenus from '../../../components/Sistema/Dashboard/SliderSubMenus';
 
 const CargaArchivos = () => {

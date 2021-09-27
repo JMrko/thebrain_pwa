@@ -4,10 +4,10 @@ import {
     CARGANDO_DATA_ARCHIVO_DATA_CONTROL_DATA,
     OBTENER_DATA_ARCHIVO_DATA_CONTROL_DATA,
     SELECCIONAR_DATA_ARCHIVO_DATA_CONTROL_DATA
-} from "constants/SistemaTypes";
-import config from 'config'
+} from "../../../../constants/SistemaTypes";
+import config from '../../../../config'
 import {message} from "antd"
-import { estadoRequestReducer } from "appRedux/actions/EstadoRequest"
+import { estadoRequestReducer } from "../../../../appRedux/actions/EstadoRequest"
 import axios from 'axios'
 
 export const CrearDataReducer = (formData) => async (dispatch, getState) => {

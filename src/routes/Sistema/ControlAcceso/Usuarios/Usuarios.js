@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import {Card, Table, Row, Col, Button} from "antd";
 import {useDispatch, useSelector} from "react-redux";
-import {ObtenerListaUsuariosReducer, VisibilidadModalNuevoUsuarioReducer} from "appRedux/actions/ControlAcceso/Usuarios/Usuarios";
-import ModalNuevoUsuario from "components/Sistema/ControlAcceso/Usuarios/ModalNuevoUsuario"
-import 'styles/Sistema/ControlAcceso/Usuarios/Usuarios.css'
+import {ObtenerListaUsuariosReducer, VisibilidadModalNuevoUsuarioReducer} from "../../../../appRedux/actions/ControlAcceso/Usuarios/Usuarios";
+import ModalNuevoUsuario from "../../../../components/Sistema/ControlAcceso/Usuarios/ModalNuevoUsuario"
+import '../../../../styles/Sistema/ControlAcceso/Usuarios/Usuarios.css'
 
 const Usuarios = () => {
     const dispatch = useDispatch();

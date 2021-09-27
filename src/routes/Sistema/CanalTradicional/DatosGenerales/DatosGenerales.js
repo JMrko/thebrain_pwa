@@ -1,6 +1,6 @@
 import React from 'react'
 import AppCanalTradicional from '../App/index'
-import 'styles/Sistema/CanalTradicional/DatosGenerales/DatosGenerales.css'
+import '../../../../styles/Sistema/CanalTradicional/DatosGenerales/DatosGenerales.css'
 const DatosGenerales = () => {
     return (
         <div>

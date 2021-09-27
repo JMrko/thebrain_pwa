@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import 'styles/Login/BannerLogin.css'
+import '../../styles/Login/BannerLogin.css'
 // import ImagenPortada from 'assets/images/portada/afondo.jpg';
 // import VideoPreload from 'assets/Videos/Login/videopreload.mp4';
 import VideoPreload from '../../assets/Videos/Login/videopreload.m4v';

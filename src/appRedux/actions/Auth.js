@@ -25,7 +25,7 @@ import {
 import {
   OBTENER_PAISES_SISTEMA,
   SELECCIONAR_PAIS_ESPECIFICO
-} from "../../../constants/PermisosTypes"
+} from "../../constants/PermisosTypes"
 
 import config from '../../config'
 import { estadoRequestReducer } from "../actions/EstadoRequest"

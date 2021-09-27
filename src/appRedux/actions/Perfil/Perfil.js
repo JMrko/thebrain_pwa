@@ -1,5 +1,5 @@
-import config from 'config'
-import { estadoRequestReducer } from "appRedux/actions/EstadoRequest"
+import config from '../../../config'
+import { estadoRequestReducer } from "../../../appRedux/actions/EstadoRequest"
 import {message} from "antd"
 
 export const EditarImagenUsuarioPerfilReducer = (imagen) => async (dispatch, getState) => {

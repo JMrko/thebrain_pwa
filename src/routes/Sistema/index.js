@@ -11,7 +11,7 @@ import CargarArchivo from './CargaArchivos/CargaArchivos'
 import ControlArchivos from './ControlArchivos/ControlArchivos'
 import Administrador from './Administrador/index'
 import DescargarData from './DescargarData/DescargarData'
-import Prueba from './Prueba/Prueba'
+// import Prueba from './Prueba/Prueba'
 // import asyncComponent from "util/asyncComponent";
 import PerfilFuncional from './Perfil/PerfilFuncional'
 
@@ -33,7 +33,7 @@ const Sistema = ({match}) => (
             <Route path={`${match.url}/control-archivos`} component={ControlArchivos}/>
             <Route path={`${match.url}/administrador`} component={Administrador}/>
 
-            <Route path={`${match.url}/prueba`} component={Prueba}/>
+            {/* <Route path={`${match.url}/prueba`} component={Prueba}/> */}
             
 
 

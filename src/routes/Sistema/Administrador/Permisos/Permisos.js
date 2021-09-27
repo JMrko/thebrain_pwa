@@ -1,11 +1,11 @@
 import React, {useState, useEffect } from 'react'
 import ListaAdministrador from '../../../../components/Sistema/Administrador/ListaAdministrador'
 import {Row, Col, Modal} from 'antd'
-import iconoCerrarModal from 'assets/images/iconos/Perfil/cerrarModal.png';
-import 'styles/Sistema/Administrador/Permisos/Permisos.css'
+import iconoCerrarModal from '../../../../assets/images/iconos/Perfil/cerrarModal.png';
+import '../../../../styles/Sistema/Administrador/Permisos/Permisos.css'
 import {
     ObtenerListaPermisos
-} from 'appRedux/actions/ControlAcceso/Permisos/Permisos'
+} from '../../../../appRedux/actions/ControlAcceso/Permisos/Permisos'
 import {useDispatch, useSelector} from "react-redux"
 import Moment from 'moment';
 

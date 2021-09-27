@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import 'styles/Sistema/Administrador/TiposUsuario/TiposUsuario.css'
+import '../../../../styles/Sistema/Administrador/TiposUsuario/TiposUsuario.css'
 import ListaAdministrador from '../../../../components/Sistema/Administrador/ListaAdministrador'
 import TablaTiposUsuarios from '../../../../components/Sistema/Administrador/TiposUsuarios/TablaTiposUsuarios'
 import ModalCrearTipoUsuario from '../../../../components/Sistema/Administrador/TiposUsuarios/ModalCrearTipoUsuario'

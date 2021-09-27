@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import {Row, Col, Tooltip} from 'antd'
-import actualizarAzul from 'assets/images/iconos/Tabla/actualizarAzul.svg'
-import 'styles/Sistema/ControlArchivo/ControlArchivo.css'
+import actualizarAzul from '../../../assets/images/iconos/Tabla/actualizarAzul.svg'
+import '../../../styles/Sistema/ControlArchivo/ControlArchivo.css'
 import ModalEliminar from '../../../components/Sistema/ControlArchivos/ModalEliminar'
 import TablaControlArchivos from '../../../components/Sistema/ControlArchivos/TablaControlArchivos'
 import Calendar from 'react-calendar';
-import IconoLupa from 'assets/images/iconos/Tabla/lupa.svg'
+import IconoLupa from '../../../assets/images/iconos/Tabla/lupa.svg'
 import 'react-calendar/dist/Calendar.css';
 import {
     ObtenerArchivosReducer
-} from "appRedux/actions/ControlArchivos/ControlArchivos";
+} from "../../../appRedux/actions/ControlArchivos/ControlArchivos";
 import {useDispatch} from "react-redux";
 
 const ControlArchivos = () => {

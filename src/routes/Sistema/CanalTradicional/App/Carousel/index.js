@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../Estilos/PromocionCarousel.scss'
-import 'styles/Sistema/CanalTradicional/App/PromocionCarousel.scss'
+import '../../../../../styles/Sistema/CanalTradicional/App/PromocionCarousel.scss'
 import {Col, Row, Card, Button, Modal, message, Spin } from "antd";
 import {Link} from "react-router-dom";
 

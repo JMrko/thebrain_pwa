@@ -4,7 +4,7 @@ import {useSelector, useDispatch} from "react-redux"
 import {Link} from "react-router-dom"
 import {
     GuardarPermisosTipoUsuarioReducer
-} from "appRedux/actions/ControlAcceso/TiposUsuarios/TiposUsuarios"
+} from "../../../../appRedux/actions/ControlAcceso/TiposUsuarios/TiposUsuarios"
 
 const PermisosTiposUsuarios = () => {
     

@@ -1,10 +1,10 @@
 import React from 'react'
 import {Row, Col, Tooltip } from 'antd'
-import 'styles/Sistema/Administrador/Usuarios/Usuario.css'
+import '../../../../styles/Sistema/Administrador/Usuarios/Usuario.css'
 import ListaAdministrador from '../../../../components/Sistema/Administrador/ListaAdministrador'
 import ModalCrearUsuario from '../../../../components/Sistema/Administrador/Usuario/ModalCrearUsuario'
 import TablaUsuarios from '../../../../components/Sistema/Administrador/Usuario/TablaUsuarios'
-import actualizarAzul from 'assets/images/iconos/Tabla/actualizarAzul.svg'
+import actualizarAzul from '../../../../assets/images/iconos/Tabla/actualizarAzul.svg'
 import SelecTipoUsuario from '../../../../components/Sistema/Administrador/Usuario/SelecTipoUsuario'
 import BuscarUsuario from '../../../../components/Sistema/Administrador/Usuario/BuscarUsuario'
 

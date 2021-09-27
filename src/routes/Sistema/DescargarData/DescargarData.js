@@ -1,19 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import {Row, Col, Modal, Input, Tooltip} from 'antd'
-import IconoEstrellaGris from 'assets/images/iconos/Dashboard/favoritogris.png'
-import IconoEstrellaBlanco from 'assets/images/iconos/DescargarData/estrellablanco.png'
-import IconoRestart from 'assets/images/iconos/Dashboard/restart.png'
-import IconoRestartAzul from 'assets/images/iconos/DescargarData/actualizarazul.png'
-import IconoRestartGris from 'assets/images/iconos/DescargarData/actualizaragris.png'
-import IconoCirculo from 'assets/images/iconos/Dashboard/circulo.png'
-import IconoCirculoSeleccionado from 'assets/images/iconos/Dashboard/circuloseleccionado.png'
-import iconoCerrarModal from 'assets/images/iconos/Perfil/cerrarModal.png';
-import 'styles/Sistema/DescargarData/DescargarData.css'
-import SliderExcels from 'components/Sistema/DescargarData/SliderExcels'
+import IconoEstrellaGris from '../../../assets/images/iconos/Dashboard/favoritogris.png'
+// import IconoEstrellaBlanco from 'assets/images/iconos/DescargarData/estrellablanco.png'
+// import IconoRestart from 'assets/images/iconos/Dashboard/restart.png'
+import IconoRestartAzul from '../../../assets/images/iconos/DescargarData/actualizarazul.png'
+import IconoRestartGris from '../../../assets/images/iconos/DescargarData/actualizaragris.png'
+// import IconoCirculo from 'assets/images/iconos/Dashboard/circulo.png'
+// import IconoCirculoSeleccionado from 'assets/images/iconos/Dashboard/circuloseleccionado.png'
+import iconoCerrarModal from '../../../assets/images/iconos/Perfil/cerrarModal.png';
+import '../../../styles/Sistema/DescargarData/DescargarData.css'
+// import SliderExcels from 'components/Sistema/DescargarData/SliderExcels'
 import { Checkbox } from 'antd';
 import {useDispatch, useSelector} from "react-redux";
-import {ObtenerDataReducer} from "appRedux/actions/Administrador/ControlData/ControlData"
-import {ObtenerDataSeleccionadaReducer} from "appRedux/actions/DescargarData/DescargarData"
+import {ObtenerDataReducer} from "../../../appRedux/actions/Administrador/ControlData/ControlData"
+import {ObtenerDataSeleccionadaReducer} from "../../../appRedux/actions/DescargarData/DescargarData"
 import { SearchOutlined } from '@ant-design/icons';
 import SliderExcelv2 from '../../../components/Sistema/DescargarData/SliderExcelv2'
 

@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import {Row, Col, Modal, Input } from 'antd'
 import {useDispatch, useSelector} from "react-redux";
-import 'styles/Sistema/Dashboard/Dashboard.css'
-import iconoCerrarModal from 'assets/images/iconos/Perfil/cerrarModal.png';
-import IconoEstrellaGris from 'assets/images/iconos/Dashboard/favoritogris.png'
-import {SeleccionarModuloReducer} from 'appRedux/actions/Dashboard/Dashboard'
-import {Link} from "react-router-dom"
+import '../../../styles/Sistema/Dashboard/Dashboard.css'
+import iconoCerrarModal from '../../../assets/images/iconos/Perfil/cerrarModal.png';
+import IconoEstrellaGris from '../../../assets/images/iconos/Dashboard/favoritogris.png'
+import {SeleccionarModuloReducer} from '../../../appRedux/actions/Dashboard/Dashboard'
+// import {Link} from "react-router-dom"
 import SliderSubMenus from '../../../components/Sistema/Dashboard/SliderSubMenus';
-import {funPermisosObtenidosIf} from 'funciones/funPermiso.js'
-import SinPermiso from 'components/Sistema/Dashboard/SinPermiso'
-import {EncontrarModuloReducer} from 'appRedux/actions/Usuarios/Usuarios'
+import {funPermisosObtenidosIf} from '../../../funciones/funPermiso.js'
+import SinPermiso from '../../../components/Sistema/Dashboard/SinPermiso'
+// import {EncontrarModuloReducer} from '../../../../appRedux/actions/Usuarios/Usuarios'
 
 const Dashboard = () => {
     

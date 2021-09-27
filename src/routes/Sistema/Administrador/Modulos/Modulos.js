@@ -1,13 +1,13 @@
 import React from 'react'
 import {Row, Col, Tooltip} from 'antd'
-import 'styles/Sistema/Administrador/Usuarios/Usuario.css'
-import 'styles/Sistema/Administrador/Modulos/Modulos.css'
+import '../../../../styles/Sistema/Administrador/Usuarios/Usuario.css'
+import '../../../../styles/Sistema/Administrador/Modulos/Modulos.css'
 import ListaAdministrador from '../../../../components/Sistema/Administrador/ListaAdministrador'
 import TablaModulos from '../../../../components/Sistema/Administrador/Modulos/TablaModulos'
 import ModalCrearModulo from '../../../../components/Sistema/Administrador/Modulos/ModalCrearModulo'
 import ModalCrearSubModulo from '../../../../components/Sistema/Administrador/Modulos/ModalCrearSubModulo'
 import BuscarModulo from '../../../../components/Sistema/Administrador/Modulos/BuscarModulo'
-import actualizarAzul from 'assets/images/iconos/Tabla/actualizarAzul.svg'
+import actualizarAzul from '../../../../assets/images/iconos/Tabla/actualizarAzul.svg'
 
 class Modulos extends React.Component {
 

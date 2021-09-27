@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'antd'
-import 'styles/Sistema/TheBrainData/TheBrainData.css'
+import '../../../styles/Sistema/TheBrainData/TheBrainData.css'
 
 const TheBrainData = () => {
     return (

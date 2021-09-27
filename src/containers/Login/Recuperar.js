@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import 'styles/Login/LoginVideo.css'
+import '../../styles/Login/LoginVideo.css'
 import FormularioRecuperar from './FormularioRecuperar'
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom"

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import VideoIniciarSesion from '../../assets/Videos/Login/videologin.mp4';
 import {Modal, Form, Input, message, Button} from "antd";
-import 'styles/Login/FormularioLogin.css'
-import 'styles/Login/FormularioCambiarContrasenia.css'
-import 'styles/Login/FormularioRecuperar.css'
+import '../../styles/Login/FormularioLogin.css'
+import '../../styles/Login/FormularioCambiarContrasenia.css'
+import '../../styles/Login/FormularioRecuperar.css'
 import {
     cambiarContraseniaReducer
 } from '../../appRedux/actions/Auth';

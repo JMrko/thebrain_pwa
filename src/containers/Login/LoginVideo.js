@@ -1,12 +1,12 @@
 import React,{useState, useEffect} from 'react'
-import 'styles/Login/LoginVideo.css'
+import '../../styles/Login/LoginVideo.css'
 import BannerLogin from './BannerLogin'
 import FormularioLogin from './FormularioLogin'
 import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from "react-router-dom"
 import CircularProgress from "../../components/CircularProgress/index";
 import {message} from 'antd'
-import {setMostrarVideoPreload, setMostrarVideoLogin} from '../../../appRedux/actions/Login'
+import {setMostrarVideoPreload, setMostrarVideoLogin} from '../../appRedux/actions/Login'
 
 const LoginVideo = () => {
 

@@ -21,12 +21,12 @@ import {
   userSignOutSuccess, 
   userSignUpSuccess
 } from "../../appRedux/actions/Auth";
-import {
-  userFacebookSignInSuccess,
-  userGithubSignInSuccess,
-  userGoogleSignInSuccess,
-  userTwitterSignInSuccess
-} from "../actions/Auth";
+// import {
+//   userFacebookSignInSuccess,
+//   userGithubSignInSuccess,
+//   userGoogleSignInSuccess,
+//   userTwitterSignInSuccess
+// } from "../actions/Auth";
 
 // const createUserWithEmailPasswordRequest = async (email, password) =>
 //   await  auth.createUserWithEmailAndPassword(email, password)
@@ -64,20 +64,20 @@ import {
 //     .then(authUser => authUser)
 //     .catch(error => error);
 
-function* createUserWithEmailPassword({payload}) {
-  const {email, password} = payload;
-  try {
-    const signUpUser = yield call(createUserWithEmailPasswordRequest, email, password);
-    if (signUpUser.message) {
-      yield put(showAuthMessage(signUpUser.message));
-    } else {
-      localStorage.setItem('user_id', signUpUser.user.uid);
-      yield put(userSignUpSuccess(signUpUser.user.uid));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* createUserWithEmailPassword({payload}) {
+//   const {email, password} = payload;
+//   try {
+//     const signUpUser = yield call(createUserWithEmailPasswordRequest, email, password);
+//     if (signUpUser.message) {
+//       yield put(showAuthMessage(signUpUser.message));
+//     } else {
+//       localStorage.setItem('user_id', signUpUser.user.uid);
+//       yield put(userSignUpSuccess(signUpUser.user.uid));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
 // function* signInUserWithGoogle() {
 //   try {
@@ -94,53 +94,53 @@ function* createUserWithEmailPassword({payload}) {
 // }
 
 
-function* signInUserWithFacebook() {
-  try {
-    const signUpUser = yield call(signInUserWithFacebookRequest);
-    if (signUpUser.message) {
-      yield put(showAuthMessage(signUpUser.message));
-    } else {
-      localStorage.setItem('user_id', signUpUser.user.uid);
-      yield put(userFacebookSignInSuccess(signUpUser.user.uid));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* signInUserWithFacebook() {
+//   try {
+//     const signUpUser = yield call(signInUserWithFacebookRequest);
+//     if (signUpUser.message) {
+//       yield put(showAuthMessage(signUpUser.message));
+//     } else {
+//       localStorage.setItem('user_id', signUpUser.user.uid);
+//       yield put(userFacebookSignInSuccess(signUpUser.user.uid));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
 
-function* signInUserWithGithub() {
-  try {
-    const signUpUser = yield call(signInUserWithGithubRequest);
-    if (signUpUser.message) {
-      yield put(showAuthMessage(signUpUser.message));
-    } else {
-      localStorage.setItem('user_id', signUpUser.user.uid);
-      yield put(userGithubSignInSuccess(signUpUser.user.uid));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* signInUserWithGithub() {
+//   try {
+//     const signUpUser = yield call(signInUserWithGithubRequest);
+//     if (signUpUser.message) {
+//       yield put(showAuthMessage(signUpUser.message));
+//     } else {
+//       localStorage.setItem('user_id', signUpUser.user.uid);
+//       yield put(userGithubSignInSuccess(signUpUser.user.uid));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
 
-function* signInUserWithTwitter() {
-  try {
-    const signUpUser = yield call(signInUserWithTwitterRequest);
-    if (signUpUser.message) {
-      if (signUpUser.message.length > 100) {
-        yield put(showAuthMessage('Your request has been canceled.'));
-      } else {
-        yield put(showAuthMessage(signUpUser.message));
-      }
-    } else {
-      localStorage.setItem('user_id', signUpUser.user.uid);
-      yield put(userTwitterSignInSuccess(signUpUser.user.uid));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* signInUserWithTwitter() {
+//   try {
+//     const signUpUser = yield call(signInUserWithTwitterRequest);
+//     if (signUpUser.message) {
+//       if (signUpUser.message.length > 100) {
+//         yield put(showAuthMessage('Your request has been canceled.'));
+//       } else {
+//         yield put(showAuthMessage(signUpUser.message));
+//       }
+//     } else {
+//       localStorage.setItem('user_id', signUpUser.user.uid);
+//       yield put(userTwitterSignInSuccess(signUpUser.user.uid));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
 function* signInUserWithEmailPassword(payload) {
   // const {email, password} = payload;
@@ -159,54 +159,54 @@ function* signInUserWithEmailPassword(payload) {
   yield put(userSignInSuccess(payload));
 }
 
-function* signOut() {
-  try {
-    const signOutUser = yield call(signOutRequest);
-    if (signOutUser === undefined) {
-      localStorage.removeItem('user_id');
-      yield put(userSignOutSuccess(signOutUser));
-    } else {
-      yield put(showAuthMessage(signOutUser.message));
-    }
-  } catch (error) {
-    yield put(showAuthMessage(error));
-  }
-}
+// function* signOut() {
+//   try {
+//     const signOutUser = yield call(signOutRequest);
+//     if (signOutUser === undefined) {
+//       localStorage.removeItem('user_id');
+//       yield put(userSignOutSuccess(signOutUser));
+//     } else {
+//       yield put(showAuthMessage(signOutUser.message));
+//     }
+//   } catch (error) {
+//     yield put(showAuthMessage(error));
+//   }
+// }
 
-export function* createUserAccount() {
-  yield takeEvery(SIGNUP_USER, createUserWithEmailPassword);
-}
+// export function* createUserAccount() {
+//   yield takeEvery(SIGNUP_USER, createUserWithEmailPassword);
+// }
 
-export function* signInWithGoogle() {
-  yield takeEvery(SIGNIN_GOOGLE_USER, signInUserWithGoogle);
-}
+// export function* signInWithGoogle() {
+//   yield takeEvery(SIGNIN_GOOGLE_USER, signInUserWithGoogle);
+// }
 
-export function* signInWithFacebook() {
-  yield takeEvery(SIGNIN_FACEBOOK_USER, signInUserWithFacebook);
-}
+// export function* signInWithFacebook() {
+//   yield takeEvery(SIGNIN_FACEBOOK_USER, signInUserWithFacebook);
+// }
 
-export function* signInWithTwitter() {
-  yield takeEvery(SIGNIN_TWITTER_USER, signInUserWithTwitter);
-}
+// export function* signInWithTwitter() {
+//   yield takeEvery(SIGNIN_TWITTER_USER, signInUserWithTwitter);
+// }
 
-export function* signInWithGithub() {
-  yield takeEvery(SIGNIN_GITHUB_USER, signInUserWithGithub);
-}
+// export function* signInWithGithub() {
+//   yield takeEvery(SIGNIN_GITHUB_USER, signInUserWithGithub);
+// }
 
 export function* signInUser() {
   yield takeEvery(SIGNIN_USER, signInUserWithEmailPassword);
 }
 
-export function* signOutUser() {
-  yield takeEvery(SIGNOUT_USER, signOut);
-}
+// export function* signOutUser() {
+//   yield takeEvery(SIGNOUT_USER, signOut);
+// }
 
 export default function* rootSaga() {
-  yield all([fork(signInUser),
-    fork(createUserAccount),
-    fork(signInWithGoogle),
-    fork(signInWithFacebook),
-    fork(signInWithTwitter),
-    fork(signInWithGithub),
-    fork(signOutUser)]);
+  // yield all([fork(signInUser),
+  //   fork(createUserAccount),
+  //   fork(signInWithGoogle),
+  //   fork(signInWithFacebook),
+  //   fork(signInWithTwitter),
+  //   fork(signInWithGithub),
+  //   fork(signOutUser)]);
 }

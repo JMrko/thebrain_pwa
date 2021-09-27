@@ -3,12 +3,12 @@ import {
     CARGANDO_DATA_MODULOS_ADMINISTRACION,
     CARGANDO_NUEVO_MODULO_ADMINISTRACION,
     CARGANDO_NUEVO_SUBMODULO_ADMINITRACION
-} from "constants/SistemaTypes";
-import config from 'config'
+} from "../../../../constants/SistemaTypes";
+import config from '../../../../config'
 import {message} from "antd"
-import { estadoRequestReducer } from "appRedux/actions/EstadoRequest"
+import { estadoRequestReducer } from "../../../../appRedux/actions/EstadoRequest"
 import axios from 'axios'
-import {ObtenerModulosUsuarioReducer} from 'appRedux/actions/Usuarios/Usuarios'
+import {ObtenerModulosUsuarioReducer} from '../../../../appRedux/actions/Usuarios/Usuarios'
 
 export const ObtenerDataReducer = () => async (dispatch, getState) => {
     dispatch({

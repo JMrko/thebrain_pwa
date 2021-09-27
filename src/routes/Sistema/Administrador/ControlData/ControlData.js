@@ -1,8 +1,8 @@
 import React from 'react'
 import {Row, Col } from 'antd'
-import ListaAdministrador from 'components/Sistema/Administrador/ListaAdministrador'
-import IconoAdministradorTipoUsuario from 'assets/images/iconos/Administrador/tipoUsuario.png'
-import 'styles/Sistema/Administrador/ControlData/ControlData.css'
+import ListaAdministrador from '../../../../components/Sistema/Administrador/ListaAdministrador'
+import IconoAdministradorTipoUsuario from '../../../../assets/images/iconos/Administrador/tipoUsuario.png'
+import '../../../../styles/Sistema/Administrador/ControlData/ControlData.css'
 import ModalCrearData from '../../../../components/Sistema/Administrador/ControlData/ModalCrearData';
 import TablaData from '../../../../components/Sistema/Administrador/ControlData/TablaData';
 import BotonEliminar from '../../../../components/Sistema/Administrador/ControlData/BotonEliminar'

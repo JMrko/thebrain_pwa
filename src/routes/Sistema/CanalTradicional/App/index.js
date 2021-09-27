@@ -1,8 +1,8 @@
 import React from 'react'
-import 'styles/Sistema/CanalTradicional/App/App.css'
+import '../../../../styles/Sistema/CanalTradicional/App/App.css'
 import Carousel from './Carousel/index'
-import DatosGenerales from 'assets/images/DatosGenerales/DatosGenerales.png'
-import Comercial from 'assets/images/DatosGenerales/Comercial.png'
+import DatosGenerales from '../../../../assets/images/DatosGenerales/DatosGenerales.png'
+import Comercial from '../../../../assets/images/DatosGenerales/Comercial.png'
 
 const AppCanalTradicional = () => {
 

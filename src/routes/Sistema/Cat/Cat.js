@@ -1,27 +1,27 @@
 import React from 'react'
 import {Row, Col} from 'antd'
 import {Link} from "react-router-dom"
-import CatCanalModerno from 'assets/images/categorias/Moderno.png';
-import catCanalTradicional from 'assets/images/categorias/CanalTradicional.png';
-import CatConvenienceStore from 'assets/images/categorias/Convenience.png';
-import CatEcommerce from 'assets/images/categorias/Ecommerce.png';
-import CatTradeMarketing from 'assets/images/categorias/TradeMarketing.png';
-import CatFarmacia from 'assets/images/categorias/Farmacia.png';
-import CatMarketing from 'assets/images/categorias/Marketing.png';
-import CatClienteDirecto from 'assets/images/categorias/ClienteDirecto.png';
-import CatControlPdv from 'assets/images/categorias/Pdv.png';
+import CatCanalModerno from '../../../assets/images/categorias/Moderno.png';
+import catCanalTradicional from '../../../assets/images/categorias/CanalTradicional.png';
+import CatConvenienceStore from '../../../assets/images/categorias/Convenience.png';
+import CatEcommerce from '../../../assets/images/categorias/Ecommerce.png';
+import CatTradeMarketing from '../../../assets/images/categorias/TradeMarketing.png';
+import CatFarmacia from '../../../assets/images/categorias/Farmacia.png';
+import CatMarketing from '../../../assets/images/categorias/Marketing.png';
+import CatClienteDirecto from '../../../assets/images/categorias/ClienteDirecto.png';
+import CatControlPdv from '../../../assets/images/categorias/Pdv.png';
 
-import icoCatCanalModerno from 'assets/images/categorias/iconos/iconoCanalModerno.png';
-import icoCatCanalTradicional from 'assets/images/categorias/iconos/iconoCanalTradicional.png';
-import icoCatConvenience from 'assets/images/categorias/iconos/iconoConvenience.png';
-import icoCatEcommerce from 'assets/images/categorias/iconos/iconoEcommerce.png';
-import icoCatTradeMarketing from 'assets/images/categorias/iconos/iconoTradeMarketing.png';
-import icoCatClientesDirectos from 'assets/images/categorias/iconos/iconoClientesDirectos.png';
-import icoCatMarketing from 'assets/images/categorias/iconos/iconoMarketing.png';
-import icoCatFarmacia from 'assets/images/categorias/iconos/iconoFarmacia.png';
-import icoCatControlPdv from 'assets/images/categorias/iconos/iconoControlPdv.png';
+import icoCatCanalModerno from '../../../assets/images/categorias/iconos/iconoCanalModerno.png';
+import icoCatCanalTradicional from '../../../assets/images/categorias/iconos/iconoCanalTradicional.png';
+import icoCatConvenience from '../../../assets/images/categorias/iconos/iconoConvenience.png';
+import icoCatEcommerce from '../../../assets/images/categorias/iconos/iconoEcommerce.png';
+import icoCatTradeMarketing from '../../../assets/images/categorias/iconos/iconoTradeMarketing.png';
+import icoCatClientesDirectos from '../../../assets/images/categorias/iconos/iconoClientesDirectos.png';
+import icoCatMarketing from '../../../assets/images/categorias/iconos/iconoMarketing.png';
+import icoCatFarmacia from '../../../assets/images/categorias/iconos/iconoFarmacia.png';
+import icoCatControlPdv from '../../../assets/images/categorias/iconos/iconoControlPdv.png';
 
-import 'styles/Sistema/Cat/Cat.css'
+import '../../../styles/Sistema/Cat/Cat.css'
 
 const Cat = () => {
 

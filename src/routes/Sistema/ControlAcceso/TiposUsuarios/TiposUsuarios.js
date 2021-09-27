@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import {Card, Table, Row, Col, Button} from "antd";
 import {useDispatch, useSelector} from "react-redux";
-import {ObtenerListaTiposUsuariosReducer, VisibilidadModalNuevoTipoUsuarioReducer} from "appRedux/actions/ControlAcceso/TiposUsuarios/TiposUsuarios";
-import ModalNuevoTipoUsuario from "components/Sistema/ControlAcceso/TiposUsuarios/ModalNuevoTipoUsuario"
+import {ObtenerListaTiposUsuariosReducer, VisibilidadModalNuevoTipoUsuarioReducer} from "../../../../appRedux/actions/ControlAcceso/TiposUsuarios/TiposUsuarios";
+import ModalNuevoTipoUsuario from "../../../../components/Sistema/ControlAcceso/TiposUsuarios/ModalNuevoTipoUsuario"
 
 const TiposUsuarios = () => {
 

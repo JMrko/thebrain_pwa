@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import {Row, Col, Switch} from 'antd'
-import IconoEditar from 'assets/images/iconos/Administrador/modulos/editar.png'
+// import IconoEditar from 'assets/images/iconos/Administrador/modulos/editar.png'
 import {useDispatch, useSelector} from "react-redux"
 import {Link} from "react-router-dom"
-import 'styles/Sistema/Administrador/TiposUsuario/PermisosTipoUsuario.css'
-import {SeleccionarPermisoReducer, PoderGuardarPermisosReducer, EditarPermisosTipoUsuario} from 'appRedux/actions/ControlAcceso/TiposUsuarios/PermisosTipoUsuario'
+import '../../../../styles/Sistema/Administrador/TiposUsuario/PermisosTipoUsuario.css'
+import {SeleccionarPermisoReducer, PoderGuardarPermisosReducer, EditarPermisosTipoUsuario} from '../../../../appRedux/actions/ControlAcceso/TiposUsuarios/PermisosTipoUsuario'
 
 const PermisosTipoUsuario = () => {
 

@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {funPermisosObtenidos} from 'funciones/funPermiso.js'
+import {funPermisosObtenidos} from '../../funciones/funPermiso.js'
 import {useDispatch, useSelector} from "react-redux";
 import {Drawer, Layout} from "antd";
 import IconoAdministrador from '../../assets/images/iconos/Sidebar/NoSeleccionado/administrador.png'
@@ -23,7 +23,7 @@ import {
   TAB_SIZE,
   THEME_TYPE_LITE
 } from "../../constants/ThemeSetting";
-import 'styles/Sidebar/Sidebar.css'
+import '../../styles/Sidebar/Sidebar.css'
 import {
     ObtenerSeleccionModuloReducer,
     SeleccionarModuloEspecificoReducer

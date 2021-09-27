@@ -8,7 +8,7 @@ import Sidebar from "../Sidebar/index";
 // import BelowHeader from "../Topbar/BelowHeader/index";
 // import Topbar from "../Topbar/index";
 // import {footerText} from "util/config";
-import App from "routes/index";
+import App from "../../routes/index";
 import {useDispatch, useSelector} from "react-redux";
 import {
   NAV_STYLE_ABOVE_HEADER,

@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import {Row, Col, Input, Button} from 'antd'
-import iconoEditar from 'assets/images/iconos/Perfil/lapizeditar.png';
-import iconoCargo from 'assets/images/iconos/Perfil/cargo.png';
-import iconoContrasenia from 'assets/images/iconos/Perfil/contrasenia.png';
-import iconoCorreo from 'assets/images/iconos/Perfil/correo.png';
-import iconoCumpleanios from 'assets/images/iconos/Perfil/cumpleanios.png';
-import iconoTelfono from 'assets/images/iconos/Perfil/telefono.png';
-import iconoUsuario from 'assets/images/iconos/Perfil/usuario.png';
-import iconoCamara from 'assets/images/iconos/Perfil/camara.png';
-import iconoPerfil from 'assets/images/iconos/Perfil/perfil.png';
+import iconoEditar from '../../../assets/images/iconos/Perfil/lapizeditar.png';
+import iconoCargo from '../../../assets/images/iconos/Perfil/cargo.png';
+import iconoContrasenia from '../../../assets/images/iconos/Perfil/contrasenia.png';
+import iconoCorreo from '../../../assets/images/iconos/Perfil/correo.png';
+import iconoCumpleanios from '../../../assets/images/iconos/Perfil/cumpleanios.png';
+import iconoTelfono from '../../../assets/images/iconos/Perfil/telefono.png';
+import iconoUsuario from '../../../assets/images/iconos/Perfil/usuario.png';
+import iconoCamara from '../../../assets/images/iconos/Perfil/camara.png';
+import iconoPerfil from '../../../assets/images/iconos/Perfil/perfil.png';
 
-import iconoCerrar from 'assets/images/iconos/Perfil/cerrar.png';
+import iconoCerrar from '../../../assets/images/iconos/Perfil/cerrar.png';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-import 'styles/Sistema/Perfil/Perfil.css'
+import '../../../styles/Sistema/Perfil/Perfil.css'
 import ModalEditarImagen from '../../../components/Sistema/Perfil/ModalEditarImagen';
 import BtnGuardarContrasenia from '../../../components/Sistema/Perfil/BtnGuardarContrasenia';
 import BtnGuardarCumpleanios from '../../../components/Sistema/Perfil/BtnGuardarCumpleanios';
