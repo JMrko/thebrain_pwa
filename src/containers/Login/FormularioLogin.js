@@ -5,13 +5,11 @@ import ImagenMexico from '../../assets/images/Login/banderaMexico.png'
 import ImagenBolivia from '../../assets/images/Login/banderaBolivia.png'
 import ImagenEeuu from '../../assets/images/Login/banderaEeuu.png'
 import ImagenArgentina from '../../assets/images/Login/banderaArgentina.png'
-// import ImagenPortada from 'assets/images/portada/afondo.jpg'
 import VideoIniciarSesion from '../../assets/Videos/Login/videologin.mp4';
 import {Form, Input, Select, Button } from "antd";
 import {Link} from "react-router-dom";
 import '../../styles/Login/FormularioLogin.css'
 import {
-    showAuthLoader,
     userSignIn,
     SeleccionarPaisReducer
 } from '../../appRedux/actions/Auth';
@@ -101,7 +99,7 @@ const FormularioLogin = (props) => {
                             {/* <Select.Option value="Chile">Chile</Select.Option>
                             <Select.Option value="Mexico">México</Select.Option>
                             <Select.Option value="Argentina">Argentina</Select.Option> */}
-                        </Select>,
+                        </Select>
 
                     </Form.Item>
 

@@ -1,12 +1,9 @@
 import React, {useState, useEffect} from 'react'
-// import ImagenPortada from 'assets/images/portada/afondo.jpg';
 import VideoIniciarSesion from '../../assets/Videos/Login/videologin.mp4';
 import {Modal, Form, Input, Button} from "antd";
 import '../../styles/Login/FormularioLogin.css'
 import '../../styles/Login/FormularioRecuperar.css'
 import {
-    showAuthLoader,
-    userSignIn,
     EnviarEmailRecuperarContraseniaReducer
 } from '../../appRedux/actions/Auth';
 import {useDispatch, useSelector} from "react-redux";

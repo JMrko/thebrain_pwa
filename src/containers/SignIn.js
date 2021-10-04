@@ -6,19 +6,11 @@ import {Link, useHistory} from "react-router-dom";
 import {
   hideMessage,
   showAuthLoader,
-  userFacebookSignIn,
-  userGithubSignIn,
-  userGoogleSignIn,
-  userSignIn,
-  userTwitterSignIn
+  userSignIn
 } from '../appRedux/actions/Auth';
 
 import IntlMessages from "../util/IntlMessages";
 import CircularProgress from "../components/CircularProgress/index";
-import TwitterOutlined from "@ant-design/icons/lib/icons/TwitterOutlined";
-import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";
-import FacebookOutlined from "@ant-design/icons/lib/icons/FacebookOutlined";
-import GoogleOutlined from "@ant-design/icons/lib/icons/GoogleOutlined";
 
 const SignIn =()=> {
 
@@ -99,30 +91,30 @@ const SignIn =()=> {
                 <div className="gx-flex-row gx-justify-content-between">
                   <span>or connect with</span>
                   <ul className="gx-social-link">
-                    <li>
+                    {/* <li>
                       <GoogleOutlined onClick={() => {
                         dispatch(showAuthLoader());
                         dispatch(userGoogleSignIn());
                       }}/>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <FacebookOutlined  onClick={() => {
                         dispatch(showAuthLoader());
                         dispatch(userFacebookSignIn());
                       }}/>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <GithubOutlined onClick={() => {
                         dispatch(showAuthLoader());
                         dispatch(userGithubSignIn());
                       }}/>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <TwitterOutlined  onClick={() => {
                         dispatch(showAuthLoader());
                         dispatch(userTwitterSignIn());
                       }}/>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 <span

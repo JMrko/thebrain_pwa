@@ -1,33 +1,24 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import {
   Layout, Popover, Avatar, Row, Col,
   Menu, Dropdown
 } from "antd";
 import {Link, useHistory} from "react-router-dom";
-
-import CustomScrollbars from "util/CustomScrollbars";
-import languageData from "./languageData";
-import {switchLanguage, toggleCollapsedSideNav} from "../../appRedux/actions/Setting";
+import {toggleCollapsedSideNav} from "../../appRedux/actions/Setting";
 import {
-  userSignOut, userSignOutSuccess,
+  userSignOut,
   SeleccionarPaisReducer
 } from "../../appRedux/actions/Auth";
-// import SearchBox from "components/SearchBox";
-// import UserInfo from "components/UserInfo";
-// import AppNotification from "components/AppNotification";
-// import MailNotification from "components/MailNotification";
-// import Auxiliary from "util/Auxiliary";
-// import IconoMenu from "assets/images/iconos/menu.png"
-import 'styles/Topbar/Topbar.css'
-import {NAV_STYLE_DEFAULT_HORIZONTAL, NAV_STYLE_DRAWER, NAV_STYLE_FIXED, NAV_STYLE_MINI_SIDEBAR, TAB_SIZE} from "../../constants/ThemeSetting";
+import '../../styles/Topbar/Topbar.css'
 import {useDispatch, useSelector} from "react-redux";
 import FiltrosTopbar from "./FiltrosTopbar";
 import { DownOutlined } from '@ant-design/icons';
 import { mostrarPaisesReducer } from "../../appRedux/actions/Auth";
 import { SeleccionarMenuReducer } from '../../appRedux/actions/Usuarios/Usuarios'
 import {ObtenerSeleccionModuloReducer} from '../../appRedux/actions/Dashboard/Dashboard'
-// import LogoGrowImagen from 'assets/Grow.PNG'
-
+import LogoGrowImagen from '../../assets/images/logos/LogoTheBrainColor.png'
+import IconoPerfil from '../../assets/images/iconos/iconoUsuario.png'
+import Icono from '../../assets/images/w-logo.png'
 const {Header} = Layout;
 
 const Topbar = () => {
@@ -43,27 +34,10 @@ const Topbar = () => {
     agregarFavorito,
     seleccionoFavoritos
   } = useSelector(({dashboard}) => dashboard);
-  const {searchText, setSearchText} = useState('');
+
   const dispatch = useDispatch();
   const {listaPaises, paisSeleccionado} = useSelector(({auth}) => auth);
-  const languageMenu = () => (
-    <CustomScrollbars className="gx-popover-lang-scroll">
-      <ul className="gx-sub-popover">
-        {languageData.map(language =>
-          <li className="gx-media gx-pointer" key={JSON.stringify(language)} onClick={(e) =>
-            dispatch(switchLanguage(language))
-          }>
-            <i className={`flag flag-24 gx-mr-2 flag-${language.icon}`}/>
-            <span className="gx-language-text">{language.name}</span>
-          </li>
-        )}
-      </ul>
-    </CustomScrollbars>);
-
-  const updateSearchChatUser = (evt) => {
-    setSearchText(evt.target.value);
-  };
-
+  
   const userMenuOptions = (
     <ul className="gx-user-popover">
       {/* <li>My Account</li>
@@ -132,10 +106,7 @@ const Topbar = () => {
             <Link to="/sistema/categorias">
                 <img 
                   style   = {{cursor:'pointer', position:'absolute', top:'-10px', left:'40px'}}
-                  // alt     = '' src={require('assets/images/teams.png')} 
-                  alt     = '' src={require('../../assets/images/logos/LogoTheBrainColor.png')} 
-                  // alt     = '' src={LogoGrowImagen} 
-                  // width   = '147px' 
+                  alt     = '' src={LogoGrowImagen} 
                   height  = '60px' 
                   id      = "logoTopbar"
                   onClick = {() => SeleccionarMenu()}
@@ -146,16 +117,28 @@ const Topbar = () => {
 
         <Col xl={0} md={0} sm={0} xs={12}>
           <div className="gx-linebar gx-mr-3">
-            <i className="gx-icon-btn icon icon-menu"
+            <div
+            className="gx-icon-btn icon icon-menu"
+            id="Contenedor-Menu-TopBar"
+            style={{
+              width:'20%'
+            }}
+             onClick={() => {
+              dispatch(toggleCollapsedSideNav(!navCollapsed));
+            }}>
+            <svg focusable="false" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </div>
+            {/* <i className="gx-icon-btn icon icon-menu"
                 onClick={() => {
                   dispatch(toggleCollapsedSideNav(!navCollapsed));
                 }}
-            />
+            /> */}
             {/* <img src={IconoMenu} width={"50px"} /> */}
+            
             <Link to="/sistema/categorias">
                 <img 
                   style   = {{cursor:'pointer', position:'absolute', top:'7px', left:'70px'}}
-                  alt     = '' src={require('../../assets/images/w-logo.png')} 
+                  alt     = '' src={Icono} 
                   // width   = '107px' 
                   height  = '35px' 
                   id      = "logoTopbar"
@@ -293,7 +276,7 @@ const Topbar = () => {
                 <Avatar 
                   src={
                     localStorage.getItem('usuimagen') == "none"
-                    ?require('../../assets/images/iconos/iconoUsuario.png')
+                    ? IconoPerfil
                     :localStorage.getItem('usuimagen')
                   } //150*150
                   className="gx-size-35 gx-pointer gx-mr-3" alt=""/>
@@ -329,7 +312,7 @@ const Topbar = () => {
             }}
           >
             <Popover placement="bottomRight" content={userMenuOptions} trigger="click">
-              <Avatar src={require('../../assets/images/iconos/iconoUsuario.png')} //150*150
+              <Avatar src={IconoPerfil} //150*150
                 className="gx-size-35 gx-pointer gx-mr-3" alt=""/>
               <span 
                 style={{

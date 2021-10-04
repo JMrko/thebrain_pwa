@@ -6,20 +6,12 @@ import {useDispatch, useSelector} from "react-redux";
 import {
   hideMessage,
   showAuthLoader,
-  userFacebookSignIn,
-  userGithubSignIn,
-  userGoogleSignIn,
-  userSignUp,
-  userTwitterSignIn
+  userSignUp
 } from "../appRedux/actions/Auth";
 
 import IntlMessages from "../util/IntlMessages";
 import {message} from "antd/lib/index";
 import CircularProgress from "../components/CircularProgress/index";
-import GoogleOutlined from "@ant-design/icons/lib/icons/GoogleOutlined";
-import FacebookOutlined from "@ant-design/icons/lib/icons/FacebookOutlined";
-import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";
-import TwitterOutlined from "@ant-design/icons/lib/icons/TwitterOutlined";
 
 const FormItem = Form.Item;
 
@@ -104,7 +96,7 @@ const SignUp = (props) => {
               <div className="gx-flex-row gx-justify-content-between">
                 <span>or connect with</span>
                 <ul className="gx-social-link">
-                  <li>
+                  {/* <li>
                     <GoogleOutlined onClick={() => {
                       dispatch(showAuthLoader());
                       dispatch(userGoogleSignIn());
@@ -127,7 +119,7 @@ const SignUp = (props) => {
                       dispatch(showAuthLoader());
                       dispatch(userTwitterSignIn());
                     }}/>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </Form>

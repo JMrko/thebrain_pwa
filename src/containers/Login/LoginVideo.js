@@ -27,7 +27,6 @@ const LoginVideo = () => {
         alertMessage, 
         showMessage,
         authUser, 
-        mostrarForm
     }= useSelector(({auth}) => auth);
 
     const {

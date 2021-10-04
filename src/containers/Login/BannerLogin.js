@@ -1,10 +1,6 @@
 import React, {useEffect} from 'react'
 import '../../styles/Login/BannerLogin.css'
-// import ImagenPortada from 'assets/images/portada/afondo.jpg';
-// import VideoPreload from 'assets/Videos/Login/videopreload.mp4';
 import VideoPreload from '../../assets/Videos/Login/videopreload.m4v';
-// import LogoBlancoNegroPagina from '../../Assets/Imagenes/Logos/LogoTheBrainBlancoNegro.png'
-// import LogoGrowBlancoNegro from '../../Assets/Imagenes/Logos/LogoGrowBlancoNegro.png'
 import LoginIconoFlecha from '../../assets/images/iconos/Login/flecha.png'
 import IconoG from '../../assets/images/iconos/Login/g.png'
 

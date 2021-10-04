@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {funPermisosObtenidos} from '../../funciones/funPermiso.js'
 import {useDispatch, useSelector} from "react-redux";
 import {Drawer, Layout} from "antd";
@@ -13,7 +13,7 @@ import IconoSelecData from '../../assets/images/iconos/Sidebar/Seleccionado/sele
 import IconoSelecControlArchivos from '../../assets/images/iconos/Sidebar/Seleccionado/selecControlArchivos.png'
 import {Link} from "react-router-dom"
 import IconoFlechaDerecha from '../../assets/images/iconos/flechaDerecha.png'
-import {toggleCollapsedSideNav, updateWindowWidth} from "../../appRedux/actions/Setting";
+import {toggleCollapsedSideNav} from "../../appRedux/actions/Setting";
 import {
   NAV_STYLE_DRAWER,
   NAV_STYLE_FIXED,
@@ -30,8 +30,7 @@ import {
 } from '../../appRedux/actions/Dashboard/Dashboard'
 import IconoCerrarMenu from '../../assets/images/iconos/Sidebar/menucerrar.png'
 import {SeleccionarMenuReducer} from '../../appRedux/actions/Usuarios/Usuarios'
-// import logotextogrow from 'assets/logotextogrow.PNG'
-
+import LogoSidebar from '../../assets/images/w-logo.png'
 const {Sider} = Layout;
 
 
@@ -47,13 +46,6 @@ const Sidebar = () => {
     const onToggleCollapsedNav = () => {
         dispatch(toggleCollapsedSideNav(!navCollapsed));
     };
-
-    // useEffect(() => {
-    //     window.addEventListener('resize', () => {
-    //         dispatch(updateWindowWidth(window.innerWidth));
-    //     })
-    // }, [dispatch]);
-
 
     let drawerStyle = "gx-collapsed-sidebar";
 
@@ -111,7 +103,7 @@ const Sidebar = () => {
                                         left:'45px',
                                         width:'60px',
                                     }}
-                                    alt     = '' src={require('../../assets/images/w-logo.png')} 
+                                    alt     = '' src={LogoSidebar} 
                                 />
                             </Link>
                             <img

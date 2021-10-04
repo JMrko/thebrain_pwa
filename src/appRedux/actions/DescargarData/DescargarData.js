@@ -1,5 +1,3 @@
-// import config from 'config'
-// import { estadoRequestReducer } from "appRedux/actions/EstadoRequest"
 import {
     OBTENER_DATA_SELECCIONADO_DESCARGAR_DATA,
     OBTENER_ARCHIVOS_DESCARGAR_DESCARGAR_DATA

@@ -1,13 +1,7 @@
 import React, {useEffect} from "react";
 import {Layout, Row, Col} from "antd";
 import Sidebar from "../Sidebar/index";
-// import HorizontalDefault from "../Topbar/HorizontalDefault/index";
-// import HorizontalDark from "../Topbar/HorizontalDark/index";
-// import InsideHeader from "../Topbar/InsideHeader/index";
-// import AboveHeader from "../Topbar/AboveHeader/index";
-// import BelowHeader from "../Topbar/BelowHeader/index";
-// import Topbar from "../Topbar/index";
-// import {footerText} from "util/config";
+import Topbar from "../Topbar/index";
 import App from "../../routes/index";
 import {useDispatch, useSelector} from "react-redux";
 import {
@@ -15,15 +9,10 @@ import {
   NAV_STYLE_BELOW_HEADER,
   NAV_STYLE_DARK_HORIZONTAL,
   NAV_STYLE_DEFAULT_HORIZONTAL,
-  NAV_STYLE_DRAWER,
   NAV_STYLE_FIXED,
   NAV_STYLE_INSIDE_HEADER_HORIZONTAL,
-  NAV_STYLE_MINI_SIDEBAR,
-  NAV_STYLE_NO_HEADER_EXPANDED_SIDEBAR,
-  NAV_STYLE_NO_HEADER_MINI_SIDEBAR,
   TAB_SIZE
 } from "../../constants/ThemeSetting";
-// import NoHeaderNotification from "../Topbar/NoHeaderNotification/index";
 import {useRouteMatch} from "react-router-dom";
 import {ObtenerPermisosUsuarioReducer, ObtenerModulosUsuarioReducer} from '../../appRedux/actions/Usuarios/Usuarios'
 import {
@@ -69,8 +58,8 @@ const MainApp = () => {
             //     return <AboveHeader/>;
             // case NAV_STYLE_BELOW_HEADER :
             //     return <BelowHeader/>;
-            // case NAV_STYLE_FIXED :
-            //     return <Topbar/>;
+            case NAV_STYLE_FIXED :
+                return <Topbar/>;
             // case NAV_STYLE_DRAWER :
             //     return <Topbar/>;
             // case NAV_STYLE_MINI_SIDEBAR :
@@ -91,14 +80,14 @@ const MainApp = () => {
         switch (navStyle) {
             case NAV_STYLE_FIXED :
                 return <Sidebar/>;
-            case NAV_STYLE_DRAWER :
-                return <Sidebar/>;
-            case NAV_STYLE_MINI_SIDEBAR :
-                return <Sidebar/>;
-            case NAV_STYLE_NO_HEADER_MINI_SIDEBAR :
-                return <Sidebar/>;
-            case NAV_STYLE_NO_HEADER_EXPANDED_SIDEBAR:
-                return <Sidebar/>;
+            // case NAV_STYLE_DRAWER :
+            //     return <Sidebar/>;
+            // case NAV_STYLE_MINI_SIDEBAR :
+            //     return <Sidebar/>;
+            // case NAV_STYLE_NO_HEADER_MINI_SIDEBAR :
+            //     return <Sidebar/>;
+            // case NAV_STYLE_NO_HEADER_EXPANDED_SIDEBAR:
+            //     return <Sidebar/>;
             default :
                 return null;
         }
@@ -133,7 +122,8 @@ const MainApp = () => {
             {getSidebar(navStyle, width)}
             <Layout>
                 {getNavStyles(navStyle)}
-                <Content className={`gx-layout-content ${getContainerClass(navStyle)} `}>
+                {/* <Content className={`gx-layout-content ${getContainerClass(navStyle)} `}> */}
+                <Content className='gx-layout-content'>
                     <App match={match}/>
                     <Footer style={{borderTop: 'solid 0px', background: 'white'}}>
                         <Row style={{ display: "flex", textAlign: "-webkit-center" }}>

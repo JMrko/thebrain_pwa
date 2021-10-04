@@ -9,11 +9,6 @@ import config from '../../../config'
 import { message } from 'antd'
 import { estadoRequestReducer } from "../../../appRedux/actions/EstadoRequest"
 import { mostrarPaisesReducer } from "../../../appRedux/actions/Auth";
-// import {
-//     CambiarPaisReducer
-// } from "../Auth"
-// import {EncontrarModuloReducer} from 'appRedux/actions/Usuarios/Usuarios'
-
 
 export const SeleccionarModuloReducer = (ruta) => async (dispatch, getState) => {
 

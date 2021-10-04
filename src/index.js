@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import {AppContainer} from 'react-hot-loader';
 import NextApp from './NextApp';
 
-const render = Component => {
+const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
       <Component/>
     </AppContainer>,
-    document.getElementById('root')
+    document.getElementById('root'),
   );
 };
 
@@ -21,6 +19,7 @@ render(NextApp);
 if (module.hot) {
   module.hot.accept('./NextApp', () => {
     render(NextApp);
+    render(require('./NextApp'));
   });
 }
 
